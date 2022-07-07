@@ -25,3 +25,9 @@ protocol RequestProtocol {
     var headers: HTTPHeaders? { get }
     var parameters: Parameters? { get }
 }
+extension RequestProtocol {
+
+    var baseURL: String {
+        return "https://api.lifesum.com/"
+    }
+}
