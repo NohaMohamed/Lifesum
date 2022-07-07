@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043B10FC287666290011BA3D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B10FB287666290011BA3D /* APIClient.swift */; };
+		04E31D3428766ADB004C39D0 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E31D3328766ADB004C39D0 /* Request.swift */; };
+		04E31D3628766B9A004C39D0 /* AlamofireExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E31D3528766B9A004C39D0 /* AlamofireExtension.swift */; };
 		4D0A4330287517CC007E9F74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A432F287517CC007E9F74 /* AppDelegate.swift */; };
 		4D0A4334287517CC007E9F74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A4333287517CC007E9F74 /* ViewController.swift */; };
 		4D0A4337287517CC007E9F74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A4335287517CC007E9F74 /* Main.storyboard */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		0222047BF144A1DD52F46190 /* Pods-LifesumChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifesumChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-LifesumChallengeTests/Pods-LifesumChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		023CA5797CC08F2A7EDAD069 /* Pods_LifesumChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifesumChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		043B10FB287666290011BA3D /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		04E31D3328766ADB004C39D0 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		04E31D3528766B9A004C39D0 /* AlamofireExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExtension.swift; sourceTree = "<group>"; };
 		27D7BF2CECC6601466F3678E /* Pods-LifesumChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifesumChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-LifesumChallengeTests/Pods-LifesumChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		42AA2F37A65102395A7DA89A /* Pods-LifesumChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifesumChallenge.debug.xcconfig"; path = "Target Support Files/Pods-LifesumChallenge/Pods-LifesumChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		45E1A4F867A5E2F7B96207A9 /* Pods-LifesumChallenge-LifesumChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifesumChallenge-LifesumChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-LifesumChallenge-LifesumChallengeUITests/Pods-LifesumChallenge-LifesumChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +95,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043B10FA287665DC0011BA3D /* Network Client */ = {
+			isa = PBXGroup;
+			children = (
+				043B10FB287666290011BA3D /* APIClient.swift */,
+				04E31D3328766ADB004C39D0 /* Request.swift */,
+				04E31D3528766B9A004C39D0 /* AlamofireExtension.swift */,
+			);
+			path = "Network Client";
+			sourceTree = "<group>";
+		};
 		45AE83C978B9C80A6BCE2721 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +140,7 @@
 		4D0A432E287517CC007E9F74 /* LifesumChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				4D0A435F287524D0007E9F74 /* Network Client */,
+				043B10FA287665DC0011BA3D /* Network Client */,
 				4D0A432F287517CC007E9F74 /* AppDelegate.swift */,
 				4D0A4333287517CC007E9F74 /* ViewController.swift */,
 				4D0A4335287517CC007E9F74 /* Main.storyboard */,
@@ -152,13 +168,6 @@
 			path = LifesumChallengeUITests;
 			sourceTree = "<group>";
 		};
-		4D0A435F287524D0007E9F74 /* Network Client */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Network Client";
-			sourceTree = "<group>";
-		};
 		B4C000E172FA7E9E0E1ACA30 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +192,7 @@
 				4D0A4328287517CC007E9F74 /* Sources */,
 				4D0A4329287517CC007E9F74 /* Frameworks */,
 				4D0A432A287517CC007E9F74 /* Resources */,
+				BC1D32B80EE56F8438ED811C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,7 +211,6 @@
 				4D0A433E287517CD007E9F74 /* Sources */,
 				4D0A433F287517CD007E9F74 /* Frameworks */,
 				4D0A4340287517CD007E9F74 /* Resources */,
-				5DE7EE5D7E47BAD12003A352 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,6 +230,7 @@
 				4D0A4348287517CD007E9F74 /* Sources */,
 				4D0A4349287517CD007E9F74 /* Frameworks */,
 				4D0A434A287517CD007E9F74 /* Resources */,
+				D2C9CD5D49297FBE2AFB0509 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -369,21 +379,38 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5DE7EE5D7E47BAD12003A352 /* [CP] Embed Pods Frameworks */ = {
+		BC1D32B80EE56F8438ED811C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LifesumChallengeTests/Pods-LifesumChallengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LifesumChallenge/Pods-LifesumChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LifesumChallengeTests/Pods-LifesumChallengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LifesumChallenge/Pods-LifesumChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LifesumChallengeTests/Pods-LifesumChallengeTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LifesumChallenge/Pods-LifesumChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2C9CD5D49297FBE2AFB0509 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LifesumChallenge-LifesumChallengeUITests/Pods-LifesumChallenge-LifesumChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LifesumChallenge-LifesumChallengeUITests/Pods-LifesumChallenge-LifesumChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LifesumChallenge-LifesumChallengeUITests/Pods-LifesumChallenge-LifesumChallengeUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -394,7 +421,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D0A4334287517CC007E9F74 /* ViewController.swift in Sources */,
+				04E31D3628766B9A004C39D0 /* AlamofireExtension.swift in Sources */,
+				04E31D3428766ADB004C39D0 /* Request.swift in Sources */,
 				4D0A4330287517CC007E9F74 /* AppDelegate.swift in Sources */,
+				043B10FC287666290011BA3D /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,7 +530,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -554,7 +584,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
