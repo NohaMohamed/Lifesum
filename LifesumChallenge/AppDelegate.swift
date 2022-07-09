@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func startFlow() {
-        window?.rootViewController = ViewController()
+        window?.rootViewController = NutritionalInformationViewController()
         window?.makeKeyAndVisible()
     }
 }

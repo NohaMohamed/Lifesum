@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0417D0422878F2B1004883BF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417D0412878F2B1004883BF /* Extensions.swift */; };
+		0417D0442878F41D004883BF /* NutritionalOvalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417D0432878F41D004883BF /* NutritionalOvalView.swift */; };
+		0417D0462878F4EC004883BF /* Reuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417D0452878F4EC004883BF /* Reuseable.swift */; };
+		0417D0482878F58A004883BF /* NutritionalInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417D0472878F58A004883BF /* NutritionalInfoViewModel.swift */; };
+		0417D04B2878FB2F004883BF /* NutritionalTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417D04A2878FB2F004883BF /* NutritionalTypeView.swift */; };
+		0417D04D2878FB3C004883BF /* NutritionalTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0417D04C2878FB3C004883BF /* NutritionalTypeView.xib */; };
 		043B10FC287666290011BA3D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B10FB287666290011BA3D /* APIClient.swift */; };
 		04E31D3428766ADB004C39D0 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E31D3328766ADB004C39D0 /* Request.swift */; };
 		04E31D3628766B9A004C39D0 /* AlamofireExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E31D3528766B9A004C39D0 /* AlamofireExtension.swift */; };
 		04E31D392876713E004C39D0 /* FoodRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E31D382876713E004C39D0 /* FoodRequest.swift */; };
 		04E31D3B2876792E004C39D0 /* FoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E31D3A2876792E004C39D0 /* FoodRepository.swift */; };
 		04E31D3D287682A3004C39D0 /* NutritionalInfoResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E31D3C287682A3004C39D0 /* NutritionalInfoResponseModel.swift */; };
+		04EC879F2878EACC00E461F3 /* NutritionalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC879D2878EACC00E461F3 /* NutritionalInformationViewController.swift */; };
+		04EC87A02878EACC00E461F3 /* NutritionalInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EC879E2878EACC00E461F3 /* NutritionalInformationViewController.xib */; };
+		04EC87A22878EB3400E461F3 /* NutritionalOvalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EC87A12878EB3400E461F3 /* NutritionalOvalView.xib */; };
+		04EC87A42878EF3F00E461F3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC87A32878EF3F00E461F3 /* Colors.swift */; };
 		4D0A4330287517CC007E9F74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A432F287517CC007E9F74 /* AppDelegate.swift */; };
 		4D0A4334287517CC007E9F74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A4333287517CC007E9F74 /* ViewController.swift */; };
-		4D0A4337287517CC007E9F74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A4335287517CC007E9F74 /* Main.storyboard */; };
 		4D0A4339287517CD007E9F74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A4338287517CD007E9F74 /* Assets.xcassets */; };
 		4D0A433C287517CD007E9F74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A433A287517CD007E9F74 /* LaunchScreen.storyboard */; };
 		4D0A4347287517CD007E9F74 /* LifesumChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A4346287517CD007E9F74 /* LifesumChallengeTests.swift */; };
@@ -46,19 +55,28 @@
 /* Begin PBXFileReference section */
 		0222047BF144A1DD52F46190 /* Pods-LifesumChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifesumChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-LifesumChallengeTests/Pods-LifesumChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		023CA5797CC08F2A7EDAD069 /* Pods_LifesumChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifesumChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0417D0412878F2B1004883BF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0417D0432878F41D004883BF /* NutritionalOvalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalOvalView.swift; sourceTree = "<group>"; };
+		0417D0452878F4EC004883BF /* Reuseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reuseable.swift; sourceTree = "<group>"; };
+		0417D0472878F58A004883BF /* NutritionalInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalInfoViewModel.swift; sourceTree = "<group>"; };
+		0417D04A2878FB2F004883BF /* NutritionalTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalTypeView.swift; sourceTree = "<group>"; };
+		0417D04C2878FB3C004883BF /* NutritionalTypeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutritionalTypeView.xib; sourceTree = "<group>"; };
 		043B10FB287666290011BA3D /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		04E31D3328766ADB004C39D0 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		04E31D3528766B9A004C39D0 /* AlamofireExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExtension.swift; sourceTree = "<group>"; };
 		04E31D382876713E004C39D0 /* FoodRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRequest.swift; sourceTree = "<group>"; };
 		04E31D3A2876792E004C39D0 /* FoodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRepository.swift; sourceTree = "<group>"; };
 		04E31D3C287682A3004C39D0 /* NutritionalInfoResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalInfoResponseModel.swift; sourceTree = "<group>"; };
+		04EC879D2878EACC00E461F3 /* NutritionalInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalInformationViewController.swift; sourceTree = "<group>"; };
+		04EC879E2878EACC00E461F3 /* NutritionalInformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutritionalInformationViewController.xib; sourceTree = "<group>"; };
+		04EC87A12878EB3400E461F3 /* NutritionalOvalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutritionalOvalView.xib; sourceTree = "<group>"; };
+		04EC87A32878EF3F00E461F3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		27D7BF2CECC6601466F3678E /* Pods-LifesumChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifesumChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-LifesumChallengeTests/Pods-LifesumChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		42AA2F37A65102395A7DA89A /* Pods-LifesumChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifesumChallenge.debug.xcconfig"; path = "Target Support Files/Pods-LifesumChallenge/Pods-LifesumChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		45E1A4F867A5E2F7B96207A9 /* Pods-LifesumChallenge-LifesumChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifesumChallenge-LifesumChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-LifesumChallenge-LifesumChallengeUITests/Pods-LifesumChallenge-LifesumChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4D0A432C287517CC007E9F74 /* LifesumChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifesumChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0A432F287517CC007E9F74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D0A4333287517CC007E9F74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4D0A4336287517CC007E9F74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D0A4338287517CD007E9F74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D0A433B287517CD007E9F74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D0A433D287517CD007E9F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,6 +119,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0417D0492878FADD004883BF /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				0417D0432878F41D004883BF /* NutritionalOvalView.swift */,
+				04EC87A12878EB3400E461F3 /* NutritionalOvalView.xib */,
+				0417D04A2878FB2F004883BF /* NutritionalTypeView.swift */,
+				0417D04C2878FB3C004883BF /* NutritionalTypeView.xib */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		0417D04E28791646004883BF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0417D0412878F2B1004883BF /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		043B10FA287665DC0011BA3D /* Network Client */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,9 +151,16 @@
 		04E31D3728767129004C39D0 /* Food Module */ = {
 			isa = PBXGroup;
 			children = (
+				0417D04E28791646004883BF /* Extensions */,
+				0417D0492878FADD004883BF /* Custom Views */,
 				04E31D382876713E004C39D0 /* FoodRequest.swift */,
 				04E31D3A2876792E004C39D0 /* FoodRepository.swift */,
 				04E31D3C287682A3004C39D0 /* NutritionalInfoResponseModel.swift */,
+				04EC879D2878EACC00E461F3 /* NutritionalInformationViewController.swift */,
+				04EC879E2878EACC00E461F3 /* NutritionalInformationViewController.xib */,
+				04EC87A32878EF3F00E461F3 /* Colors.swift */,
+				0417D0452878F4EC004883BF /* Reuseable.swift */,
+				0417D0472878F58A004883BF /* NutritionalInfoViewModel.swift */,
 			);
 			path = "Food Module";
 			sourceTree = "<group>";
@@ -160,7 +204,6 @@
 				043B10FA287665DC0011BA3D /* Network Client */,
 				4D0A432F287517CC007E9F74 /* AppDelegate.swift */,
 				4D0A4333287517CC007E9F74 /* ViewController.swift */,
-				4D0A4335287517CC007E9F74 /* Main.storyboard */,
 				4D0A4338287517CD007E9F74 /* Assets.xcassets */,
 				4D0A433A287517CD007E9F74 /* LaunchScreen.storyboard */,
 				4D0A433D287517CD007E9F74 /* Info.plist */,
@@ -309,7 +352,9 @@
 			files = (
 				4D0A433C287517CD007E9F74 /* LaunchScreen.storyboard in Resources */,
 				4D0A4339287517CD007E9F74 /* Assets.xcassets in Resources */,
-				4D0A4337287517CC007E9F74 /* Main.storyboard in Resources */,
+				04EC87A02878EACC00E461F3 /* NutritionalInformationViewController.xib in Resources */,
+				0417D04D2878FB3C004883BF /* NutritionalTypeView.xib in Resources */,
+				04EC87A22878EB3400E461F3 /* NutritionalOvalView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,13 +482,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0417D04B2878FB2F004883BF /* NutritionalTypeView.swift in Sources */,
 				4D0A4334287517CC007E9F74 /* ViewController.swift in Sources */,
+				04EC87A42878EF3F00E461F3 /* Colors.swift in Sources */,
 				04E31D392876713E004C39D0 /* FoodRequest.swift in Sources */,
 				04E31D3628766B9A004C39D0 /* AlamofireExtension.swift in Sources */,
+				0417D0482878F58A004883BF /* NutritionalInfoViewModel.swift in Sources */,
+				04EC879F2878EACC00E461F3 /* NutritionalInformationViewController.swift in Sources */,
 				04E31D3B2876792E004C39D0 /* FoodRepository.swift in Sources */,
 				04E31D3428766ADB004C39D0 /* Request.swift in Sources */,
 				4D0A4330287517CC007E9F74 /* AppDelegate.swift in Sources */,
 				043B10FC287666290011BA3D /* APIClient.swift in Sources */,
+				0417D0422878F2B1004883BF /* Extensions.swift in Sources */,
+				0417D0442878F41D004883BF /* NutritionalOvalView.swift in Sources */,
+				0417D0462878F4EC004883BF /* Reuseable.swift in Sources */,
 				04E31D3D287682A3004C39D0 /* NutritionalInfoResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,14 +533,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4D0A4335287517CC007E9F74 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4D0A4336287517CC007E9F74 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4D0A433A287517CD007E9F74 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -626,7 +670,6 @@
 				INFOPLIST_FILE = LifesumChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -654,7 +697,6 @@
 				INFOPLIST_FILE = LifesumChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
