@@ -30,8 +30,6 @@ extension UIView {
         set{
             self.layer.cornerRadius = frame.size.width/2
             self.clipsToBounds = true}
-            
         get{return self.circulate}
     }
-    
 }

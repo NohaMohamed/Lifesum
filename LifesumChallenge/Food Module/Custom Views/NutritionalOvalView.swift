@@ -19,6 +19,9 @@ class NutritionalOvalView: UIView,NibLoadable {
         super.awakeFromNib()
         
         loadNibContent()
+        setupUI()
+    }
+    private func setupUI(){
         contentview.addGradientLayer(colors: [Colors.ovalFirstColor.cgColor,Colors.ovalSecondColor.cgColor])
         contentview.dropShadow(color: Colors.ovalShadowColor, alpha: 0.33)
     }

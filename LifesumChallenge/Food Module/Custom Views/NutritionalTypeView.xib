@@ -20,49 +20,52 @@
             <rect key="frame" x="0.0" y="0.0" width="214" height="150"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="oLr-WN-AA1">
-                    <rect key="frame" x="0.0" y="0.0" width="214" height="150"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="oLr-WN-AA1">
+                    <rect key="frame" x="0.0" y="0.0" width="79" height="150"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tu7-0W-69b">
-                            <rect key="frame" x="0.0" y="0.0" width="214" height="20.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="79" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" systemColor="systemGrayColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gET-FL-DRf">
-                            <rect key="frame" x="0.0" y="42.5" width="214" height="1"/>
-                            <color key="backgroundColor" systemColor="systemGray2Color"/>
+                            <rect key="frame" x="0.0" y="42.5" width="79" height="1"/>
+                            <color key="backgroundColor" systemColor="systemGrayColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="pqu-ek-m7r"/>
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOv-zF-xRR">
-                            <rect key="frame" x="0.0" y="65.5" width="214" height="84.5"/>
+                            <rect key="frame" x="0.0" y="65.5" width="41.5" height="84.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" systemColor="systemGrayColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
+                    <constraints>
+                        <constraint firstItem="gET-FL-DRf" firstAttribute="trailing" secondItem="tu7-0W-69b" secondAttribute="trailing" id="J9e-Iy-SbJ"/>
+                        <constraint firstItem="gET-FL-DRf" firstAttribute="leading" secondItem="tu7-0W-69b" secondAttribute="leading" id="VK2-dn-IYk"/>
+                    </constraints>
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="oLr-WN-AA1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="E5B-vR-SSh"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oLr-WN-AA1" secondAttribute="trailing" id="IQe-2e-Eys"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="oLr-WN-AA1" secondAttribute="bottom" id="sAA-uZ-EFz"/>
                 <constraint firstItem="oLr-WN-AA1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zCz-Js-hv0"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="89.855072463768124" y="75.669642857142847"/>
+            <point key="canvasLocation" x="89.855072463768124" y="75"/>
         </view>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

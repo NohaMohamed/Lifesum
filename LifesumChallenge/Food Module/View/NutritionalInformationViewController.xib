@@ -30,19 +30,19 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="circulate" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WCq-Sc-rS8">
-                    <rect key="frame" x="0.0" y="344" width="414" height="128"/>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="WCq-Sc-rS8">
+                    <rect key="frame" x="91" y="376" width="232" height="128"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uwa-WK-mNe" customClass="NutritionalTypeView" customModule="LifesumChallenge" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="138" height="128"/>
+                            <rect key="frame" x="0.0" y="0.0" width="77" height="128"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXn-0D-3Kn" customClass="NutritionalTypeView" customModule="LifesumChallenge" customModuleProvider="target">
-                            <rect key="frame" x="138" y="0.0" width="138" height="128"/>
+                            <rect key="frame" x="77" y="0.0" width="78" height="128"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4El-ZT-6m6" customClass="NutritionalTypeView" customModule="LifesumChallenge" customModuleProvider="target">
-                            <rect key="frame" x="276" y="0.0" width="138" height="128"/>
+                            <rect key="frame" x="155" y="0.0" width="77" height="128"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                     </subviews>
@@ -54,11 +54,11 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="WCq-Sc-rS8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="39B-r7-Ebv"/>
                 <constraint firstItem="CKB-9X-u0H" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="3QC-wb-gdS"/>
-                <constraint firstItem="WCq-Sc-rS8" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="OW2-fc-vqe"/>
+                <constraint firstItem="WCq-Sc-rS8" firstAttribute="leading" secondItem="CKB-9X-u0H" secondAttribute="leading" constant="20" id="8YB-Cf-7q5"/>
+                <constraint firstItem="WCq-Sc-rS8" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" priority="999" id="9Ds-Yc-kwy"/>
                 <constraint firstItem="CKB-9X-u0H" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="TMb-iI-56h"/>
-                <constraint firstItem="WCq-Sc-rS8" firstAttribute="top" secondItem="CKB-9X-u0H" secondAttribute="bottom" constant="8" symbolic="YES" id="yqS-JF-X8i"/>
+                <constraint firstItem="WCq-Sc-rS8" firstAttribute="top" secondItem="CKB-9X-u0H" secondAttribute="bottom" constant="40" id="yqS-JF-X8i"/>
             </constraints>
             <point key="canvasLocation" x="133" y="80"/>
         </view>
