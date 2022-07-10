@@ -163,7 +163,6 @@
 			children = (
 				4D0A432F287517CC007E9F74 /* AppDelegate.swift */,
 				4D0A4338287517CD007E9F74 /* Assets.xcassets */,
-				4D0A433D287517CD007E9F74 /* Info.plist */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -251,6 +250,7 @@
 				043B10FA287665DC0011BA3D /* Network Client */,
 				04E31D3728767129004C39D0 /* Food Module */,
 				4D0A433A287517CD007E9F74 /* LaunchScreen.storyboard */,
+				4D0A433D287517CD007E9F74 /* Info.plist */,
 			);
 			path = LifesumChallenge;
 			sourceTree = "<group>";

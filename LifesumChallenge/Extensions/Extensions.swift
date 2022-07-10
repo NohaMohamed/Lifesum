@@ -32,4 +32,33 @@ extension UIView {
             self.clipsToBounds = true}
         get{return self.circulate}
     }
+    
+    @IBInspectable
+    var viewCornerRadius: CGFloat{
+        set{self.layer.cornerRadius = newValue;self.clipsToBounds = true}
+        get{return self.viewCornerRadius}
+    }
+}
+extension UIButton{
+    @IBInspectable
+    var localizedTitle:String{
+        get{
+            return titleLabel?.text ?? ""
+        }
+        set{
+            setTitle(Localization.string(for: newValue), for: .normal)
+        }
+    }
+}
+extension UILabel{
+    
+    @IBInspectable
+    var localizedText:String{
+        get{
+            return text ?? ""
+        }
+        set{
+            text = Localization.string(for: newValue)
+        }
+    }
 }

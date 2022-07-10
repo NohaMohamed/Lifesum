@@ -7,13 +7,7 @@
 
 import Foundation
 struct Localization {
-    
-    enum LocalizationKey: String {
-        
-        case errorMessageGeneric = "error_message_generic"
-    }
-    
-    static func string(for key: LocalizationKey) -> String {
-        NSLocalizedString(key.rawValue, comment: "")
+    static func string(for key: String) -> String {
+        NSLocalizedString(key, comment: "")
     }
 }

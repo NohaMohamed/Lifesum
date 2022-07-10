@@ -11,7 +11,9 @@ protocol  NutritionalInformationPresenterToViewProtocol: AnyObject {
 }
 
 class NutritionalInformationViewController: UIViewController {
-
+    // MARK: - IBOutlets
+    
+    @IBOutlet weak var moreInfoBtn: UIButton!
     
     // MARK: - Dependencies
     
@@ -20,11 +22,12 @@ class NutritionalInformationViewController: UIViewController {
     // MARK: - Life Cycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         let randomFoodId = Int.random(in: 0..<10)
         interactor?.fetchNutritionalInformation(randomFoodId)
     }
-    private func configure(){
-        
+    private func setupUI(){
+        moreInfoBtn.addGradientLayer(colors: [Colors.btnFirstColor.cgColor, Colors.btnSecondColor.cgColor])
     }
 
 }
