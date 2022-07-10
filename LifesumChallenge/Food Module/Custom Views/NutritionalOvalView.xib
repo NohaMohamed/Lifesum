@@ -22,43 +22,46 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euq-xm-7w5">
-                    <rect key="frame" x="115" y="101" width="42" height="21"/>
+                    <rect key="frame" x="115" y="109" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" systemColor="systemBackgroundColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NH1-KL-6hW">
-                    <rect key="frame" x="115" y="127" width="42" height="1"/>
+                    <rect key="frame" x="115" y="135" width="42" height="1"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="J5w-xd-aeg"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlv-eh-f4f">
-                    <rect key="frame" x="115" y="163" width="42" height="21"/>
+                    <rect key="frame" x="115" y="166" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" systemColor="systemBackgroundColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlz-sX-dku">
-                    <rect key="frame" x="115" y="186" width="42" height="21"/>
+                    <rect key="frame" x="115" y="192" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" systemColor="systemBackgroundColor"/>
                     <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="lbl_calories_desc"/>
+                    </userDefinedRuntimeAttributes>
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="euq-xm-7w5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="57" id="50Z-ja-EKG"/>
+                <constraint firstItem="euq-xm-7w5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="65" id="50Z-ja-EKG"/>
                 <constraint firstItem="zlv-eh-f4f" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="IAs-cm-m1y"/>
                 <constraint firstItem="NH1-KL-6hW" firstAttribute="top" secondItem="euq-xm-7w5" secondAttribute="bottom" constant="5" id="Tae-vd-eGQ"/>
                 <constraint firstItem="euq-xm-7w5" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="WDt-1p-9ZJ"/>
                 <constraint firstItem="Xlz-sX-dku" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Xee-7v-zrl"/>
                 <constraint firstItem="NH1-KL-6hW" firstAttribute="trailing" secondItem="euq-xm-7w5" secondAttribute="trailing" id="aoB-eW-M8c"/>
                 <constraint firstItem="NH1-KL-6hW" firstAttribute="leading" secondItem="euq-xm-7w5" secondAttribute="leading" id="ebI-9U-iFc"/>
-                <constraint firstItem="Xlz-sX-dku" firstAttribute="top" secondItem="zlv-eh-f4f" secondAttribute="bottom" constant="2" id="q3X-RX-9yg"/>
-                <constraint firstItem="zlv-eh-f4f" firstAttribute="top" secondItem="NH1-KL-6hW" secondAttribute="bottom" constant="35" id="wsd-Db-J0u"/>
+                <constraint firstItem="Xlz-sX-dku" firstAttribute="top" secondItem="zlv-eh-f4f" secondAttribute="bottom" constant="5" id="q3X-RX-9yg"/>
+                <constraint firstItem="zlv-eh-f4f" firstAttribute="top" secondItem="NH1-KL-6hW" secondAttribute="bottom" constant="30" id="wsd-Db-J0u"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="139" y="25"/>

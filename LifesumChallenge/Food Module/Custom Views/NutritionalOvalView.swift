@@ -25,4 +25,8 @@ class NutritionalOvalView: UIView,NibLoadable {
         contentview.addGradientLayer(colors: [Colors.ovalFirstColor.cgColor,Colors.ovalSecondColor.cgColor])
         contentview.dropShadow(color: Colors.ovalShadowColor, alpha: 0.33)
     }
+    func configure(name: String, calories: String) {
+        foodName.text = name
+        foodCalories.text = calories
+    }
 }

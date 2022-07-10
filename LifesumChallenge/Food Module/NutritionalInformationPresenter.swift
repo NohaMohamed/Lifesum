@@ -19,9 +19,13 @@ class NutritionalInformationPresenter{
     init(view: NutritionalInformationPresenterToViewProtocol) {
         self.view = view
     }
+    func map(_ apiResponse: NutritionalInfoResponseModel.Response) -> NutritionalInfoViewModel {
+        return NutritionalInfoViewModel(Name: apiResponse.title ?? "", foodCalories: apiResponse.calories ?? 0, carbs: "\(apiResponse.carbs ?? 0) %" , protein: "\(apiResponse.protein ?? 0) %", fat: "\(apiResponse.fat ?? 0) %")
+    }
 }
 extension NutritionalInformationPresenter: NutritionalInformationToPresenterProtocol{
     func didReceiveInformation(_ info: NutritionalInfoResponseModel.Response) {
-        
+        let viewModel = map(info)
+        view?.showNutritionalInformation(viewModel)
     }
 }

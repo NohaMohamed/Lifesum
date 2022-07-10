@@ -9,7 +9,7 @@ import Foundation
 struct NutritionalInfoViewModel{
     var Name: String
     var foodCalories: Int
-    var carbs: Float
-    var protein: Float
-    var fat: Float
+    var carbs: String
+    var protein: String
+    var fat: String
 }

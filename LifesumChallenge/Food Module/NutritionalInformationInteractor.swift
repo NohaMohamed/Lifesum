@@ -28,12 +28,13 @@ class NutritionalInformationInteractor {
 
 extension NutritionalInformationInteractor: NutritionalInformationViewToInteractorProtocol{
     func fetchNutritionalInformation(_ foodId: Int) {
-        repository.getNutritionalInfo(foodId) { result in
+        repository.getNutritionalInfo(foodId) {[weak self] result in
             switch result{
             case .success(let nutritional):
-                print(nutritional)
-                break
-//                presenter.didReceiveInformation(nutritional.response)
+                guard let response = nutritional.response else {
+                    return
+                }
+                self?.presenter.didReceiveInformation(response)
             case .failure(_):
                 break
             }

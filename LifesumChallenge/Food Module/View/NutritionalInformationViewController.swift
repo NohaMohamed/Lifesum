@@ -11,9 +11,14 @@ protocol  NutritionalInformationPresenterToViewProtocol: AnyObject {
 }
 
 class NutritionalInformationViewController: UIViewController {
+    
     // MARK: - IBOutlets
     
     @IBOutlet weak var moreInfoBtn: UIButton!
+    @IBOutlet weak var carbsView: NutritionalTypeView!
+    @IBOutlet weak var proteinView: NutritionalTypeView!
+    @IBOutlet weak var fatView: NutritionalTypeView!
+    @IBOutlet weak var nutritionalOvalView: NutritionalOvalView!
     
     // MARK: - Dependencies
     
@@ -33,6 +38,9 @@ class NutritionalInformationViewController: UIViewController {
 }
 extension NutritionalInformationViewController : NutritionalInformationPresenterToViewProtocol {
     func showNutritionalInformation(_ model: NutritionalInfoViewModel) {
-        
+        carbsView.configure(Localization.string(for: "carb_title"), value: model.carbs)
+        proteinView.configure(Localization.string(for: "protein_title"), value: model.protein)
+        fatView.configure(Localization.string(for: "fat_title"), value: model.fat)
+        nutritionalOvalView.configure(name: model.Name , calories: "\(model.foodCalories)")
     }
 }

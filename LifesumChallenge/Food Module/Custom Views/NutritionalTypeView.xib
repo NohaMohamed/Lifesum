@@ -44,8 +44,9 @@
                         </label>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="gET-FL-DRf" firstAttribute="trailing" secondItem="tu7-0W-69b" secondAttribute="trailing" id="J9e-Iy-SbJ"/>
-                        <constraint firstItem="gET-FL-DRf" firstAttribute="leading" secondItem="tu7-0W-69b" secondAttribute="leading" id="VK2-dn-IYk"/>
+                        <constraint firstItem="gET-FL-DRf" firstAttribute="leading" secondItem="oLr-WN-AA1" secondAttribute="leading" id="93l-cz-d0t"/>
+                        <constraint firstAttribute="trailing" secondItem="gET-FL-DRf" secondAttribute="trailing" id="dcO-6r-xhK"/>
+                        <constraint firstItem="tu7-0W-69b" firstAttribute="centerX" secondItem="oLr-WN-AA1" secondAttribute="centerX" id="vOs-uW-6sD"/>
                     </constraints>
                 </stackView>
             </subviews>

@@ -5,10 +5,8 @@
   Created by Noha Mohamed on 10/07/2022.
   
 */
-"error_message_generic" = "Oops, something went wrong!";
-"error_message_can_not_send_request" = "Can not send request";
-"error_message_can_not_read_data" = "Can not read data";
-"drivers_map_dismiss" = "Dismiss";
-"drivers_map_show" = "Show";
-"drivers_map_hide" = "hide";
 "btn_more_info" = "MORE INFO";
+"lbl_calories_desc" = "Calories per serving";
+"carb_title" = "CARBS";
+"protein_title" = "PROTEIN";
+"fat_title" = "FAT";
