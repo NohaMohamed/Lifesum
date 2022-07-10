@@ -10,7 +10,7 @@ import Alamofire
 
 protocol APICleintProtocol {
     
-    func send<ResponsType>(request: RequestProtocol, compeletion: @escaping (Result<ResponsType, Error>) -> Void) where ResponsType: Codable
+    func send<ResponsType>(request: RequestProtocol, compeletion: @escaping (Result<ResponsType, Error>) -> Void) where ResponsType: BaseModel
 }
 
 class APICleint {
@@ -22,7 +22,7 @@ class APICleint {
 
 extension APICleint: APICleintProtocol {
     
-    func send<ResponsType>(request: RequestProtocol, compeletion: @escaping (Result<ResponsType, Error>) -> Void) where ResponsType : Codable {
+    func send<ResponsType>(request: RequestProtocol, compeletion: @escaping (Result<ResponsType, Error>) -> Void) where ResponsType : BaseModel {
         Session.default.request(request).validate().responseObject(compeletion: compeletion)
     }
 }

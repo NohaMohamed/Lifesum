@@ -6,10 +6,12 @@
 //
 
 import Foundation
-
-struct NutritionalInfoResponseModel : Codable {
+protocol BaseModel : Codable {
+    var meta: Meta{get}
+}
+struct NutritionalInfoResponseModel : BaseModel {
     
-    let meta : Meta?
+    var meta: Meta
     let response : Response?
     
     enum CodingKeys: String, CodingKey {
@@ -52,12 +54,13 @@ struct NutritionalInfoResponseModel : Codable {
             case unsaturatedfat = "unsaturatedfat"
         }
     }
-    struct Meta : Codable {
-        
-        let code : Int?
-        enum CodingKeys: String, CodingKey {
-            case code = "code"
-        }
-        
+}
+
+struct Meta : Codable {
+    
+    let code : Int?
+    enum CodingKeys: String, CodingKey {
+        case code = "code"
     }
+    
 }

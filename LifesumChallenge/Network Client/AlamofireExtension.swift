@@ -40,7 +40,7 @@ extension Session {
 }
 extension DataRequest {
     @discardableResult
-    func responseObject<ResponsType: Codable>(compeletion: @escaping (Result<ResponsType, Error>) -> Void) -> Self {
+    func responseObject<ResponsType: BaseModel>(compeletion: @escaping (Result<ResponsType, Error>) -> Void) -> Self {
         
         responseString { response in
             
@@ -54,7 +54,9 @@ extension DataRequest {
 //                    compeletion(Result.failure())
                     return
                 }
-                compeletion(Result.success(model))
+                if model.meta.code == 200 {
+                    compeletion(Result.success(model))
+                }
                 
             case .failure(let error):
                 

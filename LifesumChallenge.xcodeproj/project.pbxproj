@@ -14,6 +14,8 @@
 		0417D04B2878FB2F004883BF /* NutritionalTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417D04A2878FB2F004883BF /* NutritionalTypeView.swift */; };
 		0417D04D2878FB3C004883BF /* NutritionalTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0417D04C2878FB3C004883BF /* NutritionalTypeView.xib */; };
 		043B10FC287666290011BA3D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B10FB287666290011BA3D /* APIClient.swift */; };
+		04DA15C4287A8395006954BE /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA15C3287A8395006954BE /* Localization.swift */; };
+		04DA15C6287A83C2006954BE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04DA15C5287A83C2006954BE /* Localizable.strings */; };
 		04DBD8092879D2E00045EC58 /* NutritionalInformationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBD8082879D2E00045EC58 /* NutritionalInformationInteractor.swift */; };
 		04DBD80B2879D3040045EC58 /* NutritionalInformationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBD80A2879D3040045EC58 /* NutritionalInformationPresenter.swift */; };
 		04DBD80D2879DBBA0045EC58 /* NutritionalInfoSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBD80C2879DBBA0045EC58 /* NutritionalInfoSceneConfigurator.swift */; };
@@ -64,6 +66,8 @@
 		0417D04A2878FB2F004883BF /* NutritionalTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalTypeView.swift; sourceTree = "<group>"; };
 		0417D04C2878FB3C004883BF /* NutritionalTypeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutritionalTypeView.xib; sourceTree = "<group>"; };
 		043B10FB287666290011BA3D /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		04DA15C3287A8395006954BE /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		04DA15C5287A83C2006954BE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		04DBD8082879D2E00045EC58 /* NutritionalInformationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalInformationInteractor.swift; sourceTree = "<group>"; };
 		04DBD80A2879D3040045EC58 /* NutritionalInformationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalInformationPresenter.swift; sourceTree = "<group>"; };
 		04DBD80C2879DBBA0045EC58 /* NutritionalInfoSceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalInfoSceneConfigurator.swift; sourceTree = "<group>"; };
@@ -154,6 +158,25 @@
 			path = "Network Client";
 			sourceTree = "<group>";
 		};
+		04DA15C7287A83E6006954BE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A432F287517CC007E9F74 /* AppDelegate.swift */,
+				4D0A4338287517CD007E9F74 /* Assets.xcassets */,
+				4D0A433D287517CD007E9F74 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		04DA15C8287A8402006954BE /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				04DA15C3287A8395006954BE /* Localization.swift */,
+				04DA15C5287A83C2006954BE /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		04DBD80E2879E4F90045EC58 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,13 +245,12 @@
 		4D0A432E287517CC007E9F74 /* LifesumChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				04DA15C8287A8402006954BE /* Localization */,
+				04DA15C7287A83E6006954BE /* Application */,
 				0417D04E28791646004883BF /* Extensions */,
 				043B10FA287665DC0011BA3D /* Network Client */,
 				04E31D3728767129004C39D0 /* Food Module */,
-				4D0A432F287517CC007E9F74 /* AppDelegate.swift */,
-				4D0A4338287517CD007E9F74 /* Assets.xcassets */,
 				4D0A433A287517CD007E9F74 /* LaunchScreen.storyboard */,
-				4D0A433D287517CD007E9F74 /* Info.plist */,
 			);
 			path = LifesumChallenge;
 			sourceTree = "<group>";
@@ -373,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D0A433C287517CD007E9F74 /* LaunchScreen.storyboard in Resources */,
+				04DA15C6287A83C2006954BE /* Localizable.strings in Resources */,
 				4D0A4339287517CD007E9F74 /* Assets.xcassets in Resources */,
 				04EC87A02878EACC00E461F3 /* NutritionalInformationViewController.xib in Resources */,
 				0417D04D2878FB3C004883BF /* NutritionalTypeView.xib in Resources */,
@@ -518,6 +541,7 @@
 				043B10FC287666290011BA3D /* APIClient.swift in Sources */,
 				04DBD8092879D2E00045EC58 /* NutritionalInformationInteractor.swift in Sources */,
 				0417D0422878F2B1004883BF /* Extensions.swift in Sources */,
+				04DA15C4287A8395006954BE /* Localization.swift in Sources */,
 				0417D0442878F41D004883BF /* NutritionalOvalView.swift in Sources */,
 				0417D0462878F4EC004883BF /* Reuseable.swift in Sources */,
 				04E31D3D287682A3004C39D0 /* NutritionalInfoResponseModel.swift in Sources */,
