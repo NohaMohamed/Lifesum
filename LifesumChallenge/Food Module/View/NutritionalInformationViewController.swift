@@ -6,7 +6,7 @@
 //
 
 import UIKit
-protocol  NutritionalInformationPresenterToViewProtocol: AnyObject {
+protocol  NutritionalInformationPresenterToViewProtocol: AnyObject , LoadingViewProtocol{
     func showNutritionalInformation(_ model: NutritionalInfoViewModel)
 }
 
@@ -23,6 +23,8 @@ class NutritionalInformationViewController: UIViewController {
     // MARK: - Dependencies
     
     var interactor: NutritionalInformationViewToInteractorProtocol?
+    
+    // MARK: - Properties
     
     // MARK: - Life Cycle Functions
     override func viewDidLoad() {
@@ -41,6 +43,6 @@ extension NutritionalInformationViewController : NutritionalInformationPresenter
         carbsView.configure(Localization.string(for: "carb_title"), value: model.carbs)
         proteinView.configure(Localization.string(for: "protein_title"), value: model.protein)
         fatView.configure(Localization.string(for: "fat_title"), value: model.fat)
-        nutritionalOvalView.configure(name: model.Name , calories: "\(model.foodCalories)")
+        nutritionalOvalView.configure(name: model.name , calories: "\(model.calories)")
     }
 }

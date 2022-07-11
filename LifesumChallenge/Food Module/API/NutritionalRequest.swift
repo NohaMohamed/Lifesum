@@ -6,7 +6,7 @@
 //
 
 import Foundation
-enum FoodRequest: RequestProtocol {
+enum NutritionalRequest: RequestProtocol {
     case getNutritionalInfo(_ foodId: Int)
     
     var endPoint: String{

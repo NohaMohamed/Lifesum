@@ -40,7 +40,7 @@ extension Session {
 }
 extension DataRequest {
     @discardableResult
-    func responseObject<ResponsType: BaseModel>(compeletion: @escaping (Result<ResponsType, Error>) -> Void) -> Self {
+    func responseObject<ResponsType: BaseModel>(compeletion: @escaping (Result<ResponsType, CustomError>) -> Void) -> Self {
         
         responseString { response in
             
@@ -51,16 +51,18 @@ extension DataRequest {
                 guard let jsonData = jsonString.data(using: .utf8),
                       let model = try? JSONDecoder().decode(ResponsType.self, from: jsonData)
                 else {
-//                    compeletion(Result.failure())
+                    compeletion(Result.failure(.canNotDecodeObject))
                     return
                 }
-                if model.meta.code == 200 {
+                if model.meta.code == ErrorCodes.sucess.rawValue {
                     compeletion(Result.success(model))
+                }else{
+                    compeletion(Result.failure(.generic))
                 }
                 
             case .failure(let error):
                 
-                compeletion(Result.failure(error))
+                compeletion(Result.failure(CustomError(error: error)))
                 
             }
         }

@@ -36,18 +36,18 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="232" placeholderIntrinsicHeight="128" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WCq-Sc-rS8">
-                    <rect key="frame" x="91" y="376" width="232" height="128"/>
+                    <rect key="frame" x="91" y="376" width="303" height="128"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uwa-WK-mNe" customClass="NutritionalTypeView" customModule="LifesumChallenge" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="71" height="128"/>
+                            <rect key="frame" x="0.0" y="0.0" width="92.5" height="128"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXn-0D-3Kn" customClass="NutritionalTypeView" customModule="LifesumChallenge" customModuleProvider="target">
-                            <rect key="frame" x="81" y="0.0" width="71.5" height="128"/>
+                            <rect key="frame" x="102.5" y="0.0" width="93.5" height="128"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4El-ZT-6m6" customClass="NutritionalTypeView" customModule="LifesumChallenge" customModuleProvider="target">
-                            <rect key="frame" x="162.5" y="0.0" width="69.5" height="128"/>
+                            <rect key="frame" x="206" y="0.0" width="97" height="128"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                     </subviews>
@@ -74,10 +74,10 @@
             <constraints>
                 <constraint firstItem="CKB-9X-u0H" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="3QC-wb-gdS"/>
                 <constraint firstItem="WCq-Sc-rS8" firstAttribute="leading" secondItem="CKB-9X-u0H" secondAttribute="leading" constant="20" id="8YB-Cf-7q5"/>
-                <constraint firstItem="WCq-Sc-rS8" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" priority="999" id="9Ds-Yc-kwy"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wHf-9T-lvm" secondAttribute="bottom" constant="50" id="ELY-wP-NLZ"/>
                 <constraint firstItem="wHf-9T-lvm" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="JT5-Na-Lua"/>
                 <constraint firstItem="CKB-9X-u0H" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="TMb-iI-56h"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WCq-Sc-rS8" secondAttribute="trailing" priority="999" constant="20" id="kWu-UW-F4d"/>
                 <constraint firstItem="wHf-9T-lvm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="tZE-co-Nx8"/>
                 <constraint firstItem="WCq-Sc-rS8" firstAttribute="top" secondItem="CKB-9X-u0H" secondAttribute="bottom" constant="40" id="yqS-JF-X8i"/>
             </constraints>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040E4431287AADB7002E1870 /* NutritionalStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040E4430287AADB7002E1870 /* NutritionalStubs.swift */; };
 		0417D0422878F2B1004883BF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417D0412878F2B1004883BF /* Extensions.swift */; };
 		0417D0442878F41D004883BF /* NutritionalOvalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417D0432878F41D004883BF /* NutritionalOvalView.swift */; };
 		0417D0462878F4EC004883BF /* Reuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417D0452878F4EC004883BF /* Reuseable.swift */; };
@@ -14,6 +15,8 @@
 		0417D04B2878FB2F004883BF /* NutritionalTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417D04A2878FB2F004883BF /* NutritionalTypeView.swift */; };
 		0417D04D2878FB3C004883BF /* NutritionalTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0417D04C2878FB3C004883BF /* NutritionalTypeView.xib */; };
 		043B10FC287666290011BA3D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B10FB287666290011BA3D /* APIClient.swift */; };
+		04691982287B2E7F00D66C8B /* NutritionalRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04691981287B2E7F00D66C8B /* NutritionalRepositoryMock.swift */; };
+		04691984287B2F3300D66C8B /* APIClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04691983287B2F3300D66C8B /* APIClientSpy.swift */; };
 		04DA15C4287A8395006954BE /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA15C3287A8395006954BE /* Localization.swift */; };
 		04DA15C6287A83C2006954BE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04DA15C5287A83C2006954BE /* Localizable.strings */; };
 		04DBD8092879D2E00045EC58 /* NutritionalInformationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBD8082879D2E00045EC58 /* NutritionalInformationInteractor.swift */; };
@@ -21,17 +24,22 @@
 		04DBD80D2879DBBA0045EC58 /* NutritionalInfoSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBD80C2879DBBA0045EC58 /* NutritionalInfoSceneConfigurator.swift */; };
 		04E31D3428766ADB004C39D0 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E31D3328766ADB004C39D0 /* Request.swift */; };
 		04E31D3628766B9A004C39D0 /* AlamofireExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E31D3528766B9A004C39D0 /* AlamofireExtension.swift */; };
-		04E31D392876713E004C39D0 /* FoodRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E31D382876713E004C39D0 /* FoodRequest.swift */; };
-		04E31D3B2876792E004C39D0 /* FoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E31D3A2876792E004C39D0 /* FoodRepository.swift */; };
+		04E31D392876713E004C39D0 /* NutritionalRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E31D382876713E004C39D0 /* NutritionalRequest.swift */; };
+		04E31D3B2876792E004C39D0 /* NutritionalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E31D3A2876792E004C39D0 /* NutritionalRepository.swift */; };
 		04E31D3D287682A3004C39D0 /* NutritionalInfoResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E31D3C287682A3004C39D0 /* NutritionalInfoResponseModel.swift */; };
 		04EC879F2878EACC00E461F3 /* NutritionalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC879D2878EACC00E461F3 /* NutritionalInformationViewController.swift */; };
 		04EC87A02878EACC00E461F3 /* NutritionalInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EC879E2878EACC00E461F3 /* NutritionalInformationViewController.xib */; };
 		04EC87A22878EB3400E461F3 /* NutritionalOvalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EC87A12878EB3400E461F3 /* NutritionalOvalView.xib */; };
 		04EC87A42878EF3F00E461F3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC87A32878EF3F00E461F3 /* Colors.swift */; };
+		04F9B277287B8F32007D0BAE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9B276287B8F32007D0BAE /* LoadingView.swift */; };
+		04F9B279287B8FD9007D0BAE /* NutritionalInfoViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9B278287B8FD9007D0BAE /* NutritionalInfoViewSpy.swift */; };
+		04F9B27B287B9935007D0BAE /* NutritionalInfoInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9B27A287B9935007D0BAE /* NutritionalInfoInteractorTests.swift */; };
+		04F9B27D287B997B007D0BAE /* DriversListPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9B27C287B997B007D0BAE /* DriversListPresenterSpy.swift */; };
+		04F9B283287BB764007D0BAE /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9B282287BB764007D0BAE /* CustomError.swift */; };
 		4D0A4330287517CC007E9F74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A432F287517CC007E9F74 /* AppDelegate.swift */; };
 		4D0A4339287517CD007E9F74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A4338287517CD007E9F74 /* Assets.xcassets */; };
 		4D0A433C287517CD007E9F74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A433A287517CD007E9F74 /* LaunchScreen.storyboard */; };
-		4D0A4347287517CD007E9F74 /* LifesumChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A4346287517CD007E9F74 /* LifesumChallengeTests.swift */; };
+		4D0A4347287517CD007E9F74 /* NutritionalInfoPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A4346287517CD007E9F74 /* NutritionalInfoPresenterTests.swift */; };
 		4D0A4351287517CD007E9F74 /* LifesumChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A4350287517CD007E9F74 /* LifesumChallengeUITests.swift */; };
 		4D0A4353287517CD007E9F74 /* LifesumChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A4352287517CD007E9F74 /* LifesumChallengeUITestsLaunchTests.swift */; };
 		4EE825246CAF799780159FE6 /* Pods_LifesumChallenge_LifesumChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A87A8474DC577920C0BFE381 /* Pods_LifesumChallenge_LifesumChallengeUITests.framework */; };
@@ -59,6 +67,7 @@
 /* Begin PBXFileReference section */
 		0222047BF144A1DD52F46190 /* Pods-LifesumChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifesumChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-LifesumChallengeTests/Pods-LifesumChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		023CA5797CC08F2A7EDAD069 /* Pods_LifesumChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifesumChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		040E4430287AADB7002E1870 /* NutritionalStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalStubs.swift; sourceTree = "<group>"; };
 		0417D0412878F2B1004883BF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0417D0432878F41D004883BF /* NutritionalOvalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalOvalView.swift; sourceTree = "<group>"; };
 		0417D0452878F4EC004883BF /* Reuseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reuseable.swift; sourceTree = "<group>"; };
@@ -66,6 +75,8 @@
 		0417D04A2878FB2F004883BF /* NutritionalTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalTypeView.swift; sourceTree = "<group>"; };
 		0417D04C2878FB3C004883BF /* NutritionalTypeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutritionalTypeView.xib; sourceTree = "<group>"; };
 		043B10FB287666290011BA3D /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		04691981287B2E7F00D66C8B /* NutritionalRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalRepositoryMock.swift; sourceTree = "<group>"; };
+		04691983287B2F3300D66C8B /* APIClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientSpy.swift; sourceTree = "<group>"; };
 		04DA15C3287A8395006954BE /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		04DA15C5287A83C2006954BE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		04DBD8082879D2E00045EC58 /* NutritionalInformationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalInformationInteractor.swift; sourceTree = "<group>"; };
@@ -73,13 +84,18 @@
 		04DBD80C2879DBBA0045EC58 /* NutritionalInfoSceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalInfoSceneConfigurator.swift; sourceTree = "<group>"; };
 		04E31D3328766ADB004C39D0 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		04E31D3528766B9A004C39D0 /* AlamofireExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExtension.swift; sourceTree = "<group>"; };
-		04E31D382876713E004C39D0 /* FoodRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRequest.swift; sourceTree = "<group>"; };
-		04E31D3A2876792E004C39D0 /* FoodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRepository.swift; sourceTree = "<group>"; };
+		04E31D382876713E004C39D0 /* NutritionalRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalRequest.swift; sourceTree = "<group>"; };
+		04E31D3A2876792E004C39D0 /* NutritionalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalRepository.swift; sourceTree = "<group>"; };
 		04E31D3C287682A3004C39D0 /* NutritionalInfoResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalInfoResponseModel.swift; sourceTree = "<group>"; };
 		04EC879D2878EACC00E461F3 /* NutritionalInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalInformationViewController.swift; sourceTree = "<group>"; };
 		04EC879E2878EACC00E461F3 /* NutritionalInformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutritionalInformationViewController.xib; sourceTree = "<group>"; };
 		04EC87A12878EB3400E461F3 /* NutritionalOvalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutritionalOvalView.xib; sourceTree = "<group>"; };
 		04EC87A32878EF3F00E461F3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		04F9B276287B8F32007D0BAE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		04F9B278287B8FD9007D0BAE /* NutritionalInfoViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalInfoViewSpy.swift; sourceTree = "<group>"; };
+		04F9B27A287B9935007D0BAE /* NutritionalInfoInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalInfoInteractorTests.swift; sourceTree = "<group>"; };
+		04F9B27C287B997B007D0BAE /* DriversListPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversListPresenterSpy.swift; sourceTree = "<group>"; };
+		04F9B282287BB764007D0BAE /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		27D7BF2CECC6601466F3678E /* Pods-LifesumChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifesumChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-LifesumChallengeTests/Pods-LifesumChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		42AA2F37A65102395A7DA89A /* Pods-LifesumChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifesumChallenge.debug.xcconfig"; path = "Target Support Files/Pods-LifesumChallenge/Pods-LifesumChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		45E1A4F867A5E2F7B96207A9 /* Pods-LifesumChallenge-LifesumChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifesumChallenge-LifesumChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-LifesumChallenge-LifesumChallengeUITests/Pods-LifesumChallenge-LifesumChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,7 +105,7 @@
 		4D0A433B287517CD007E9F74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D0A433D287517CD007E9F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D0A4342287517CD007E9F74 /* LifesumChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifesumChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D0A4346287517CD007E9F74 /* LifesumChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifesumChallengeTests.swift; sourceTree = "<group>"; };
+		4D0A4346287517CD007E9F74 /* NutritionalInfoPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalInfoPresenterTests.swift; sourceTree = "<group>"; };
 		4D0A434C287517CD007E9F74 /* LifesumChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifesumChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0A4350287517CD007E9F74 /* LifesumChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifesumChallengeUITests.swift; sourceTree = "<group>"; };
 		4D0A4352287517CD007E9F74 /* LifesumChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifesumChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -127,6 +143,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040E442F287AAD89002E1870 /* Nutritional Information */ = {
+			isa = PBXGroup;
+			children = (
+				04F9B281287B9AE1007D0BAE /* Tests */,
+				04F9B280287B9ACF007D0BAE /* Stubs */,
+				04F9B27F287B9AC4007D0BAE /* Mock */,
+				04F9B27E287B9A77007D0BAE /* Spy */,
+			);
+			path = "Nutritional Information";
+			sourceTree = "<group>";
+		};
 		0417D0492878FADD004883BF /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +181,7 @@
 				043B10FB287666290011BA3D /* APIClient.swift */,
 				04E31D3328766ADB004C39D0 /* Request.swift */,
 				04E31D3528766B9A004C39D0 /* AlamofireExtension.swift */,
+				04F9B282287BB764007D0BAE /* CustomError.swift */,
 			);
 			path = "Network Client";
 			sourceTree = "<group>";
@@ -188,8 +216,8 @@
 		04DBD80F2879E54C0045EC58 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				04E31D3A2876792E004C39D0 /* FoodRepository.swift */,
-				04E31D382876713E004C39D0 /* FoodRequest.swift */,
+				04E31D3A2876792E004C39D0 /* NutritionalRepository.swift */,
+				04E31D382876713E004C39D0 /* NutritionalRequest.swift */,
 				04E31D3C287682A3004C39D0 /* NutritionalInfoResponseModel.swift */,
 				0417D0472878F58A004883BF /* NutritionalInfoViewModel.swift */,
 			);
@@ -205,8 +233,44 @@
 				04DBD8082879D2E00045EC58 /* NutritionalInformationInteractor.swift */,
 				04DBD80A2879D3040045EC58 /* NutritionalInformationPresenter.swift */,
 				04DBD80C2879DBBA0045EC58 /* NutritionalInfoSceneConfigurator.swift */,
+				04F9B276287B8F32007D0BAE /* LoadingView.swift */,
 			);
 			path = "Food Module";
+			sourceTree = "<group>";
+		};
+		04F9B27E287B9A77007D0BAE /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				04F9B278287B8FD9007D0BAE /* NutritionalInfoViewSpy.swift */,
+				04F9B27C287B997B007D0BAE /* DriversListPresenterSpy.swift */,
+				04691983287B2F3300D66C8B /* APIClientSpy.swift */,
+			);
+			path = Spy;
+			sourceTree = "<group>";
+		};
+		04F9B27F287B9AC4007D0BAE /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				04691981287B2E7F00D66C8B /* NutritionalRepositoryMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		04F9B280287B9ACF007D0BAE /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				040E4430287AADB7002E1870 /* NutritionalStubs.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		04F9B281287B9AE1007D0BAE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A4346287517CD007E9F74 /* NutritionalInfoPresenterTests.swift */,
+				04F9B27A287B9935007D0BAE /* NutritionalInfoInteractorTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		45AE83C978B9C80A6BCE2721 /* Frameworks */ = {
@@ -258,7 +322,7 @@
 		4D0A4345287517CD007E9F74 /* LifesumChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				4D0A4346287517CD007E9F74 /* LifesumChallengeTests.swift */,
+				040E442F287AAD89002E1870 /* Nutritional Information */,
 			);
 			path = LifesumChallengeTests;
 			sourceTree = "<group>";
@@ -529,13 +593,14 @@
 			files = (
 				0417D04B2878FB2F004883BF /* NutritionalTypeView.swift in Sources */,
 				04EC87A42878EF3F00E461F3 /* Colors.swift in Sources */,
-				04E31D392876713E004C39D0 /* FoodRequest.swift in Sources */,
+				04E31D392876713E004C39D0 /* NutritionalRequest.swift in Sources */,
 				04DBD80D2879DBBA0045EC58 /* NutritionalInfoSceneConfigurator.swift in Sources */,
 				04DBD80B2879D3040045EC58 /* NutritionalInformationPresenter.swift in Sources */,
+				04F9B283287BB764007D0BAE /* CustomError.swift in Sources */,
 				04E31D3628766B9A004C39D0 /* AlamofireExtension.swift in Sources */,
 				0417D0482878F58A004883BF /* NutritionalInfoViewModel.swift in Sources */,
 				04EC879F2878EACC00E461F3 /* NutritionalInformationViewController.swift in Sources */,
-				04E31D3B2876792E004C39D0 /* FoodRepository.swift in Sources */,
+				04E31D3B2876792E004C39D0 /* NutritionalRepository.swift in Sources */,
 				04E31D3428766ADB004C39D0 /* Request.swift in Sources */,
 				4D0A4330287517CC007E9F74 /* AppDelegate.swift in Sources */,
 				043B10FC287666290011BA3D /* APIClient.swift in Sources */,
@@ -544,6 +609,7 @@
 				04DA15C4287A8395006954BE /* Localization.swift in Sources */,
 				0417D0442878F41D004883BF /* NutritionalOvalView.swift in Sources */,
 				0417D0462878F4EC004883BF /* Reuseable.swift in Sources */,
+				04F9B277287B8F32007D0BAE /* LoadingView.swift in Sources */,
 				04E31D3D287682A3004C39D0 /* NutritionalInfoResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,7 +618,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D0A4347287517CD007E9F74 /* LifesumChallengeTests.swift in Sources */,
+				04F9B279287B8FD9007D0BAE /* NutritionalInfoViewSpy.swift in Sources */,
+				04F9B27B287B9935007D0BAE /* NutritionalInfoInteractorTests.swift in Sources */,
+				040E4431287AADB7002E1870 /* NutritionalStubs.swift in Sources */,
+				4D0A4347287517CD007E9F74 /* NutritionalInfoPresenterTests.swift in Sources */,
+				04691984287B2F3300D66C8B /* APIClientSpy.swift in Sources */,
+				04691982287B2E7F00D66C8B /* NutritionalRepositoryMock.swift in Sources */,
+				04F9B27D287B997B007D0BAE /* DriversListPresenterSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,7 +841,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ios.LifesumChallengeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -789,7 +861,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ios.LifesumChallengeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

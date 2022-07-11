@@ -7,8 +7,8 @@
 
 import Foundation
 struct NutritionalInfoViewModel{
-    var Name: String
-    var foodCalories: Int
+    var name: String
+    var calories: Int
     var carbs: String
     var protein: String
     var fat: String

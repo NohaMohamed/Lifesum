@@ -14,12 +14,12 @@ class NutritionalInformationInteractor {
     // MARK: - Dependencies
     
     var presenter: NutritionalInformationToPresenterProtocol
-    var repository: FoodInteractorToRepositoryProtocol
+    var repository: NutritionalInteractorToRepositoryProtocol
     
     // MARK: - Initializers
     
     init(presenter: NutritionalInformationToPresenterProtocol,
-         repository: FoodInteractorToRepositoryProtocol) {
+         repository: NutritionalInteractorToRepositoryProtocol) {
         
         self.presenter = presenter
         self.repository = repository
@@ -28,13 +28,12 @@ class NutritionalInformationInteractor {
 
 extension NutritionalInformationInteractor: NutritionalInformationViewToInteractorProtocol{
     func fetchNutritionalInformation(_ foodId: Int) {
+        presenter.showLoading()
         repository.getNutritionalInfo(foodId) {[weak self] result in
+            self?.presenter.hideLoading()
             switch result{
             case .success(let nutritional):
-                guard let response = nutritional.response else {
-                    return
-                }
-                self?.presenter.didReceiveInformation(response)
+                self?.presenter.didReceiveInformation(nutritional.response)
             case .failure(_):
                 break
             }
