@@ -1,0 +1,19 @@
+# Xcode
+xcuserdata/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcworkspace/contents.xcworkspacedata
+!*.xcodeproj/xcshareddata/
+
+# CocoaPods
+#
+Pods/
+#
+# Add this line if you want to avoid checking in source code from the Xcode workspace
+# *.xcworkspace
+#Podfile.lock
+.DS_Store
+*.swp
+*~.nib
+
+build/
