@@ -27,17 +27,11 @@ class NutritionalRepositoryMock: NutritionalInteractorToRepositoryProtocol {
     func successResponsStub() -> NutritionalInfoResponseModel {
         NutritionalStubs.createNutritionalSuccessData()
     }
-//    
-//    func simulateGettingEmptySuccessRespons() {
-//        compeletion?(Result.success(NutritionalInfoResponseModel())
-//    }
-    
     func simulateGettingNonEmptySuccessRespons() {
         compeletion?(Result.success(successResponsStub()))
     }
-    
-    func simulateGettingErrorRespons() {
-//        compeletion?(Result.failure(CustomNetworkError.canNotDecodeObject))
+    func simulateGettingErrorResponse() {
+        compeletion?(Result.failure(CustomError.canNotDecodeObject))
     }
     
     // MARK: - Mock Function

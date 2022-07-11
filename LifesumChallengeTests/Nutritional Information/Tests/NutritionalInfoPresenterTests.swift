@@ -12,7 +12,7 @@ class NutritionalInfoPresenterTests: XCTestCase {
     
     // MARK: - Properties
     
-    var sut: NutritionalInformationPresenter!
+    var sut: NutritionalInfoPresenter!
     var view: NutritionalInfoViewSpy!
 
     // MARK: - Life Cycle Functions
@@ -21,7 +21,7 @@ class NutritionalInfoPresenterTests: XCTestCase {
         super.setUp()
         
         view = NutritionalInfoViewSpy()
-        sut = NutritionalInformationPresenter(view: view)
+        sut = NutritionalInfoPresenter(view: view)
     }
     
     override func tearDown() {
@@ -35,7 +35,7 @@ class NutritionalInfoPresenterTests: XCTestCase {
         // Given
         view = NutritionalInfoViewSpy()
         // When
-        sut = NutritionalInformationPresenter(view: view)
+        sut = NutritionalInfoPresenter(view: view)
         // Then
         XCTAssertNotNil(sut.view)
     }

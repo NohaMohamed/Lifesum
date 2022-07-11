@@ -1,17 +1,17 @@
 //
-//  NutritionalInformationViewController.swift
+//  NutritionalInfoViewController.swift
 //  LifesumChallenge
 //
 //  Created by Noha Mohamed on 09/07/2022.
 //
 
 import UIKit
-protocol  NutritionalInformationPresenterToViewProtocol: AnyObject , LoadingViewProtocol{
-    func showNutritionalInformation(_ model: NutritionalInfoViewModel)
+protocol  NutritionalInfoPresenterToViewProtocol: AnyObject , LoadingViewProtocol{
+    func showNutritionalInfo(_ model: NutritionalInfoViewModel)
     func showErrorView(title: String, subtitle: String)
 }
 
-class NutritionalInformationViewController: UIViewController {
+class NutritionalInfoViewController: UIViewController {
     
     // MARK: - IBOutlets
     
@@ -23,7 +23,7 @@ class NutritionalInformationViewController: UIViewController {
     
     // MARK: - Dependencies
     
-    var interactor: NutritionalInformationViewToInteractorProtocol?
+    var interactor: NutritionalInfoViewToInteractorProtocol?
     
     // MARK: - Properties
     
@@ -32,14 +32,14 @@ class NutritionalInformationViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         let randomFoodId = Int.random(in: 0..<10)
-        interactor?.fetchNutritionalInformation(randomFoodId)
+        interactor?.fetchNutritionalInfo(randomFoodId)
     }
     private func setupUI(){
         moreInfoBtn.addGradientLayer(colors: [Colors.btnFirstColor.cgColor, Colors.btnSecondColor.cgColor])
     }
 
 }
-extension NutritionalInformationViewController : NutritionalInformationPresenterToViewProtocol {
+extension NutritionalInfoViewController : NutritionalInfoPresenterToViewProtocol {
     func showErrorView(title: String, subtitle: String) {
         let alert = UIAlertController(title: title, message: subtitle, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
@@ -48,7 +48,7 @@ extension NutritionalInformationViewController : NutritionalInformationPresenter
         self.present(alert, animated: true, completion: nil)
     }
     
-    func showNutritionalInformation(_ model: NutritionalInfoViewModel) {
+    func showNutritionalInfo(_ model: NutritionalInfoViewModel) {
         carbsView.configure(Localization.string(for: "carb_title"), value: model.carbs)
         proteinView.configure(Localization.string(for: "protein_title"), value: model.protein)
         fatView.configure(Localization.string(for: "fat_title"), value: model.fat)

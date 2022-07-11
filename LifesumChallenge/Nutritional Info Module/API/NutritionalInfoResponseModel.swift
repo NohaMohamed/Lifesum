@@ -12,7 +12,7 @@ protocol BaseModel : Codable {
 struct NutritionalInfoResponseModel : BaseModel {
     
     var meta: Meta
-    let response : Response
+    let response : Response?
     
     struct Response : Codable {
         

@@ -8,7 +8,7 @@
 import Foundation
 @testable import LifesumChallenge
 
-class NutritionalInfoPresenterSpy: NutritionalInformationToPresenterProtocol {
+class NutritionalInfoPresenterSpy: NutritionalInfoToPresenterProtocol {
     
     
     // MARK: - Testing Properties
@@ -19,7 +19,7 @@ class NutritionalInfoPresenterSpy: NutritionalInformationToPresenterProtocol {
     
     // MARK: - Dependencies
     
-    var view: NutritionalInformationPresenterToViewProtocol?
+    var view: NutritionalInfoPresenterToViewProtocol?
     
 //    // MARK: - Spy Functions
 //
@@ -27,7 +27,7 @@ class NutritionalInfoPresenterSpy: NutritionalInformationToPresenterProtocol {
     func didReceiveError(_ error: CustomError) {
         self.error = error
     }
-    func didReceiveInformation(_ info: NutritionalInfoResponseModel.Response) {
+    func didReceiveInfo(_ info: NutritionalInfoResponseModel.Response) {
         nutritionalInfo = info
     }
     func showLoading() {

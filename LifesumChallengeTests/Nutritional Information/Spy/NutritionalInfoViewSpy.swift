@@ -10,12 +10,12 @@ import UIKit
 
 @testable import LifesumChallenge
 
-class NutritionalInfoViewSpy: NutritionalInformationPresenterToViewProtocol {
+class NutritionalInfoViewSpy: NutritionalInfoPresenterToViewProtocol {
     
     
     // MARK: - Dependencies
     
-    var interactor: NutritionalInformationViewToInteractorProtocol?
+    var interactor: NutritionalInfoViewToInteractorProtocol?
     
     // MARK: - Testing Properties
     
@@ -26,7 +26,7 @@ class NutritionalInfoViewSpy: NutritionalInformationPresenterToViewProtocol {
     
     // MARK: - Spy Functions
 
-    func showNutritionalInformation(_ model: NutritionalInfoViewModel) {
+    func showNutritionalInfo(_ model: NutritionalInfoViewModel) {
         self.nutritionalInfo = model
     }
     func showLoading() {

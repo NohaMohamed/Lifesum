@@ -8,11 +8,13 @@
 import UIKit
 
 class NutritionalOvalView: UIView,NibLoadable {
+    
     //MARK: - Outlets
     
     @IBOutlet var contentview: UIView!
     @IBOutlet weak var foodName: UILabel!
     @IBOutlet weak var foodCalories: UILabel!
+    
     // MARK: - Life Cycle Functions
     var gradientLayer = CAGradientLayer()
     override func awakeFromNib() {

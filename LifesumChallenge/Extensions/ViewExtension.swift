@@ -62,10 +62,3 @@ extension UILabel{
         }
     }
 }
-extension String {
-    var floatValueWithoutPercentage: Float? {
-        get {
-            return Float(self.replacingOccurrences(of: " %", with: ""))
-        }
-    }
-}

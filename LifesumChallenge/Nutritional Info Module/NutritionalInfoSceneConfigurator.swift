@@ -7,17 +7,17 @@
 
 import Foundation
 protocol NutritionalInfoSceneConfiguratorProtocol {
-    func configured(_ vc: NutritionalInformationViewController) -> NutritionalInformationViewController
+    func configured(_ vc: NutritionalInfoViewController) -> NutritionalInfoViewController
     
 }
 final class NutritionalInfoSceneConfigurator: NutritionalInfoSceneConfiguratorProtocol {
     
     @discardableResult
     
-    func configured(_ vc: NutritionalInformationViewController) -> NutritionalInformationViewController {
+    func configured(_ vc: NutritionalInfoViewController) -> NutritionalInfoViewController {
         let repository = FoodRepository()
-        let presenter = NutritionalInformationPresenter(view: vc)
-        let interactor = NutritionalInformationInteractor(presenter: presenter, repository: repository)
+        let presenter = NutritionalInfoPresenter(view: vc)
+        let interactor = NutritionalInfoInteractor(presenter: presenter, repository: repository)
         vc.interactor = interactor
         return vc
     }
