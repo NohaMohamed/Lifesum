@@ -28,7 +28,7 @@ class NutritionalInfoPresenter{
 }
 extension NutritionalInfoPresenter: NutritionalInfoToPresenterProtocol{
     func didReceiveError(_ error: CustomError) {
-        view?.showErrorView(title: "error_title".localizedLowercase, subtitle: error.localizedDescription)
+        view?.showErrorView(title: Localization.string(for: "error_title"), subtitle: error.localizedDescription)
     }
     
     func showLoading() {

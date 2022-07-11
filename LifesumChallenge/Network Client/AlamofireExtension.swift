@@ -54,6 +54,9 @@ extension DataRequest {
                     compeletion(Result.failure(.canNotDecodeObject))
                     return
                 }
+                // TODO: comment if condition & uncomment line below to test error
+//                compeletion(Result.failure(.generic))
+                
                 if model.meta.code == ErrorCodes.sucess.rawValue {
                     compeletion(Result.success(model))
                 }else{
@@ -61,7 +64,6 @@ extension DataRequest {
                 }
                 
             case .failure(let error):
-                
                 compeletion(Result.failure(CustomError(error: error)))
                 
             }

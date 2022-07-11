@@ -22,8 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func startFlow() {
-        let no = NutritionalInfoSceneConfigurator()
-        let vc = no.configured(NutritionalInfoViewController())
+        let configurator = NutritionalInfoSceneConfigurator()
+        let vc = configurator.configured(NutritionalInfoViewController())
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
     }
