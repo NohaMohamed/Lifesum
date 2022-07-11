@@ -26,13 +26,20 @@ class NutritionalInfoViewController: UIViewController {
     var interactor: NutritionalInfoViewToInteractorProtocol?
     
     // MARK: - Properties
+    var foodId: Int? {
+        didSet{
+            guard let nutritionalId = foodId else {
+                showErrorView(title: Localization.string(for: "error_title"), subtitle: Localization.string(for: "error_message_generic"))
+                return
+            }
+            interactor?.fetchNutritionalInfo(nutritionalId)
+        }
+    }
     
     // MARK: - Life Cycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        let randomFoodId = Int.random(in: 0..<10)
-        interactor?.fetchNutritionalInfo(randomFoodId)
     }
     private func setupUI(){
         moreInfoBtn.addGradientLayer(colors: [Colors.btnFirstColor.cgColor, Colors.btnSecondColor.cgColor])

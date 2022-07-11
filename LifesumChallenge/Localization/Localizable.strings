@@ -13,3 +13,4 @@
 "error_title"  = "Oops!...";
 "error_message_generic" = "Oops, something went wrong!";
 "error_message_can_not_read_data" = "Can not read data";
+"initial_btn_title" = "GET New Nutritional Info";
