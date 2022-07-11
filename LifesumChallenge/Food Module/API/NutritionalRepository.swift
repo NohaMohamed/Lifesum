@@ -8,7 +8,7 @@
 import Foundation
 protocol NutritionalInteractorToRepositoryProtocol {
     var apiClient: APICleintProtocol { get }
-    func getNutritionalInfo(_ foodId: Int, compeletion: @escaping (Result<NutritionalInfoResponseModel, Error>) -> Void)
+    func getNutritionalInfo(_ foodId: Int, compeletion: @escaping (Result<NutritionalInfoResponseModel, CustomError>) -> Void)
 }
 final class FoodRepository {
     
@@ -25,7 +25,7 @@ extension FoodRepository: NutritionalInteractorToRepositoryProtocol {
     
     // MARK: - Functions
     
-    func getNutritionalInfo(_ foodId: Int, compeletion: @escaping (Result<NutritionalInfoResponseModel, Error>) -> Void) {
+    func getNutritionalInfo(_ foodId: Int, compeletion: @escaping (Result<NutritionalInfoResponseModel, CustomError>) -> Void) {
         
         let request = NutritionalRequest.getNutritionalInfo(foodId)
         

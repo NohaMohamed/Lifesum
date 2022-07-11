@@ -20,7 +20,7 @@ class NutritionalRepositoryMock: NutritionalInteractorToRepositoryProtocol {
     
     // MARK: - Testing Properties
     
-    var compeletion: ((Result<NutritionalInfoResponseModel, Error>) -> Void)?
+    var compeletion: ((Result<NutritionalInfoResponseModel, CustomError>) -> Void)?
     
     // MARK: - Mock Behaviour
     
@@ -42,7 +42,7 @@ class NutritionalRepositoryMock: NutritionalInteractorToRepositoryProtocol {
     
     // MARK: - Mock Function
     
-    func getNutritionalInfo(_ foodId: Int, compeletion: @escaping (Result<NutritionalInfoResponseModel, Error>) -> Void) {
+    func getNutritionalInfo(_ foodId: Int, compeletion: @escaping (Result<NutritionalInfoResponseModel, CustomError>) -> Void) {
         self.compeletion = compeletion
     }
 }
