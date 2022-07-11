@@ -8,6 +8,7 @@
 import Foundation
 protocol NutritionalInformationToPresenterProtocol {
     func didReceiveInformation(_ info: NutritionalInfoResponseModel.Response)
+    func didReceiveError(_ error: CustomError)
     func showLoading()
     func hideLoading()
 }
@@ -26,6 +27,10 @@ class NutritionalInformationPresenter{
     }
 }
 extension NutritionalInformationPresenter: NutritionalInformationToPresenterProtocol{
+    func didReceiveError(_ error: CustomError) {
+        view?.showErrorView(title: "error_title".localizedLowercase, subtitle: error.localizedDescription)
+    }
+    
     func showLoading() {
         view?.showLoading()
     }
@@ -38,4 +43,5 @@ extension NutritionalInformationPresenter: NutritionalInformationToPresenterProt
         let viewModel = map(info)
         view?.showNutritionalInformation(viewModel)
     }
+    
 }

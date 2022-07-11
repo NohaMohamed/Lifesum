@@ -23,13 +23,10 @@ class NutritionalInfoPresenterSpy: NutritionalInformationToPresenterProtocol {
     
 //    // MARK: - Spy Functions
 //
-//    func didReceiveDrivers(_ drivers: [Drivers.Driver]) {
-//        self.drivers = drivers
-//    }
-//
-//    func didReceiveError(_ error: CustomNetworkError) {
-//        self.error = error
-//    }
+
+    func didReceiveError(_ error: CustomError) {
+        self.error = error
+    }
     func didReceiveInformation(_ info: NutritionalInfoResponseModel.Response) {
         nutritionalInfo = info
     }

@@ -22,11 +22,11 @@ enum CustomError: Error, LocalizedError {
     public var localizedDescription: String {
         switch self {
         case .canNotDecodeObject:
-            return Localization.string(for: "")
+            return Localization.string(for: "error_message_can_not_read_data")
         case .generic:
-            return Localization.string(for: "")
+            return Localization.string(for: "error_message_generic")
         case .unknowen(let message):
-            return message ?? Localization.string(for: "")
+            return message ?? Localization.string(for: "error_message_generic")
         }
     }
 

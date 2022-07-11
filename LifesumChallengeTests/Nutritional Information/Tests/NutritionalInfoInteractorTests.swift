@@ -67,13 +67,13 @@ class NutritionalInfoInteractorTests: XCTestCase {
 //        XCTAssertTrue(presenter.drivers?.isEmpty ?? false)
 //    }
 //    
-//    func test_fetchAllDriversInHambureg_failure() {
-//        // when
-//        sut.fetchAllDriversInHambureg()
-//        repository.simulateGettingErrorRespons()
-//        // then
-//        XCTAssertNotNil(presenter.error)
-//    }
+    func test_fetchAllDriversInHambureg_failure() {
+        // when
+        sut.fetchAllDriversInHambureg()
+        repository.simulateGettingErrorRespons()
+        // then
+        XCTAssertNotNil(presenter.error)
+    }
 //    
 //    func test_fetchAllDriversInHambureg_shouldShowLoadingBeforResponse() {
 //        // when

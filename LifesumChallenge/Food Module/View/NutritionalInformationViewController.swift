@@ -8,6 +8,7 @@
 import UIKit
 protocol  NutritionalInformationPresenterToViewProtocol: AnyObject , LoadingViewProtocol{
     func showNutritionalInformation(_ model: NutritionalInfoViewModel)
+    func showErrorView(title: String, subtitle: String)
 }
 
 class NutritionalInformationViewController: UIViewController {
@@ -39,6 +40,14 @@ class NutritionalInformationViewController: UIViewController {
 
 }
 extension NutritionalInformationViewController : NutritionalInformationPresenterToViewProtocol {
+    func showErrorView(title: String, subtitle: String) {
+        let alert = UIAlertController(title: title, message: subtitle, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     func showNutritionalInformation(_ model: NutritionalInfoViewModel) {
         carbsView.configure(Localization.string(for: "carb_title"), value: model.carbs)
         proteinView.configure(Localization.string(for: "protein_title"), value: model.protein)

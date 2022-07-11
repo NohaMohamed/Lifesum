@@ -10,3 +10,6 @@
 "carb_title" = "CARBS";
 "protein_title" = "PROTEIN";
 "fat_title" = "FAT";
+"error_title"  = "Oops!...";
+"error_message_generic" = "Oops, something went wrong!";
+"error_message_can_not_read_data" = "Can not read data";
